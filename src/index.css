@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-gradient-start: #0f0c29;
+  --bg-gradient-mid: #302b63;
+  --bg-gradient-end: #24243e;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-border: rgba(255, 255, 255, 0.1);
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --accent: #667eea;
+  --accent-light: #764ba2;
+  --progress-bg: rgba(255, 255, 255, 0.1);
+  --progress-fill: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+  --shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-mid), var(--bg-gradient-end));
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
