@@ -2,6 +2,8 @@
 
 A live countdown timer showing how much time is left until the weekend (Saturday).
 
+**Live Demo:** https://ajoealex.github.io/Weekend-Calculator/
+
 ## Features
 
 - Live countdown displaying days, hours, minutes, and seconds until Saturday
